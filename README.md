@@ -14,7 +14,7 @@ If you require to host the project on your own dedicated platform and need SSL o
 - [Instructions](#instructions)
 - [Environment Variables](#env)
 - [Railway.app Service Setup](#railway-setup)
-- [Dedicate SSL/HTTPS Server Setup](#server-setup)
+- [Dedicated SSL/HTTPS Server Setup](#server-setup)
 
 <br>
 
@@ -115,7 +115,7 @@ The following is are the instructions for setting up the Inworld Generate Token 
 
 <br>
 
-## Dedicate SSL/HTTPS Server Setup <a id="server-setup" name="server-setup"></a>
+## Dedicated SSL/HTTPS Server Setup <a id="server-setup" name="server-setup"></a>
 
 Do to modern security requirements for browsers, if you run the Inworld Web SDK from an external or Production service that uses SSL/HTTPS you will need to setup the this project on a service that can allow HTTPS OR you need a SSL Key/Certificate.
 
