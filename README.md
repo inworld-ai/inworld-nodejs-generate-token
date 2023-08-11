@@ -19,7 +19,7 @@ It's important to note that this service is easily run on localhost or on a non-
 
 <br>
 
-## Requirements
+## Requirements <a id="requirements" name="requirements"></a>
 
 - Node version 16+
 - NPM version 8.19.4+
@@ -33,7 +33,7 @@ It's important to note that this service is easily run on localhost or on a non-
 
 ---
 
-If you are setting this project up locally or on a remote server follow these instructions. If you're using an automatic hosting service like, [Railway.app](https://railway.app), you will not need to perform this but review the list of [Environment Variables](https://railway.app) to know how to setup the service.
+If you are setting this project up locally or on a remote server follow these instructions. If you're using an automatic hosting service like, [Railway.app](https://railway.app), you will not need to perform this but review the list of [Environment Variables](#env) to know how to setup the service. If you use automated hosting services which don't allow for a `.env` file to be created to store your Environment Variables you will need to use the `NOENV` environment variable defined in the [Environment Variables](#env) section.
 
 1. From the project directory type `yarn install` to download and install the project dependencies.
 1. Copy the `.env-sample` file to `.evn`.

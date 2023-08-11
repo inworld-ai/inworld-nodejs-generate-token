@@ -17,13 +17,16 @@ try {
     );
   }
   if (!process.env.INWORLD_KEY) {
-    throw new Error('INWORLD_KEY env variable is required');
+    throw new Error('INWORLD_KEY env variable is required. This is you\'re Inworld interation API Key');
   }
   if (!process.env.INWORLD_SECRET) {
-    throw new Error('INWORLD_SECRET env variable is required');
+    throw new Error('INWORLD_SECRET env variable is required. This is you\'re Inworld interation API Secret');
+  }
+  if (!process.env.INWORLD_SCENE) {
+    throw new Error('SCENE_ID env variable is required. This is your machine readable scene id for integration');
   }
   if (process.env.USE_SSL) {
-    if (process.env.USE_SSL === 'true' || process.env.USE_SSL === 'false') {
+    if (process.env.USE_SSL !== 'true' && process.env.USE_SSL !== 'false') {
       throw new Error('USE_SSL env variable must be either true or false');
     }
     if (process.env.USE_SSL === 'true') {
@@ -57,7 +60,7 @@ const USE_SSL = process.env.USE_SSL === 'true' ? true : false;
 const client = new InworldClient().setApiKey({
   key: process.env.INWORLD_KEY!,
   secret: process.env.INWORLD_SECRET!,
-});
+}).setScene(process.env.INWORLD_SCENE!);
 
 const app = express();
 
