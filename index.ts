@@ -23,7 +23,7 @@ try {
     throw new Error('INWORLD_SECRET env variable is required. This is you\'re Inworld interation API Secret');
   }
   if (!process.env.INWORLD_SCENE) {
-    throw new Error('SCENE_ID env variable is required. This is your machine readable scene id for integration');
+    throw new Error('INWORLD_SCENE env variable is required. This is your machine readable scene id for integration');
   }
   if (process.env.USE_SSL) {
     if (process.env.USE_SSL !== 'true' && process.env.USE_SSL !== 'false') {
