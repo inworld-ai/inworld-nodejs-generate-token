@@ -2,7 +2,9 @@
 
 This example project contains a server that uses the Inworld API Key and Secret to generate an authorization token to access Inworld.
 
-It's important to note that this service is easily run on localhost or on a non-ssl based production server. If you require to host the project on your own dedicated platform and need SSL or HTTPS you will need to follow the [SSL/HTTPS Server Setup](#server-setup) documentation.
+It's important to note that this service is easily run on localhost or on a non-ssl based production server. This service can be easily deployed by using the template of this project on [Railway.app](https://railway.app). More information can be found in the [Railway.app Service Setup](#railway-setup) section.
+
+If you require to host the project on your own dedicated platform and need SSL or HTTPS you will need to follow the [SSL/HTTPS Server Setup](#server-setup) documentation.
 
 <br>
 
@@ -81,11 +83,35 @@ The following is are the instructions for setting up the Inworld Generate Token 
 
 <br>
 
-3. The service will now deploy and wait until it says Success to know when it's live.
+3. The service will now deploy and wait until it says Success to know when it's live. If you run into any issues click on the **View Logs** button and see if errors appear in them.
 
 ---
 
 ![Railway.app Template Deploy](/imgs/img-1-c.png "Railway.app Template Deploy")
+
+<br>
+
+4. Click on the **Settings** tab and scroll down to **Domains**. Click on the **Generate Domain** button
+
+---
+
+![Railway.app Domain Settings](/imgs/img-1-d.png "Railway.app Domain Settings")
+
+<br>
+
+5. A public facing domain will now be created for the service.
+
+---
+
+![Railway.app Domain Settings](/imgs/img-1-e.png "Railway.app Domain Settings")
+
+<br>
+
+6. Test the domain by opening it in your web browser. You should see a successful JSON token response.
+
+---
+
+![Service Token Response](/imgs/img-1-f.png "Service Token Response")
 
 <br>
 
